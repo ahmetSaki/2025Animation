@@ -26,6 +26,3 @@ This project features a New Year's Eve animation for 2024. Users will see the "H
     style.css
     script.js
 
-
-
-
