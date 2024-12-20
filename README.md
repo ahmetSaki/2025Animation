@@ -14,3 +14,18 @@ This project features a New Year's Eve animation for 2024. Users will see the "H
 - **Year 2024 and 2025 Animations** : While the 2024 balloons move, the 2025 balloon will appear with an animation.
 - **"Happy New Year" Message** : After the animation finishes, the "Happy New Year" message will be displayed to the user.
 - **Balloon Animation** : Balloons move on the screen as part of the New Year celebration.
+
+ ## File Structure
+ 
+ ```bash
+/new-year-animation
+    /images
+        - balloon.png
+        - balloons.png
+    index.html
+    style.css
+    script.js
+
+
+
+
