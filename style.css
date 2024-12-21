@@ -68,7 +68,7 @@ body {
 }
 
 #balloons {
-    display: none;
+    display: flex;
     position: absolute;
     top: 51rem;
     justify-content: center;
