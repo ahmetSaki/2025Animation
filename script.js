@@ -110,16 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             complete: function (anim) {
                 var balloons = document.getElementById('balloons');
                 balloons.style.display = 'flex';
-
-                anime({
-                    targets: '#balloons',
-                    translateY: -windowHeight - 200,
-                    duration: 4000,
-                    easing: 'easeInOutQuad',
-                })
-
-                animateBalloons();
-
+                 animateBalloons();
             }
         })
     }
