@@ -3,6 +3,32 @@ document.addEventListener('DOMContentLoaded', () => {
     var windowHeight = window.innerHeight;
 
 
+
+
+    // RANDOM BALLOON ANIMATION FUNCTION
+    function animateBalloons() {
+        const balloons = document.querySelectorAll('#balloons img');
+
+        balloons.forEach((balloon) => {
+            // A RANDOM HEIGHT AND START TIMING IS SET FOR EACH BALLOON
+            const randomDelay = Math.random() * 2000; // RANDOM DELAY (0-2000 ms)
+            const randomHeight = Math.random() * windowHeight * 5; // RANDOM HEIGHT
+            const randomX = (Math.random() - 0.5) * 100; // RANDOM HORIZONTAL DEVIANTION
+
+            anime({
+                targets: balloon,
+                translateY: -randomHeight,
+                translateX: randomX, 
+                duration: 4000 + randomDelay, 
+                easing: 'easeInOutQuad',
+                delay: randomDelay, 
+                loop: true, 
+            });
+        });
+    }
+
+
+
     // FIRST ANIMATION FUNCTION
 
     function firstAnimation() {
@@ -84,12 +110,16 @@ document.addEventListener('DOMContentLoaded', () => {
             complete: function (anim) {
                 var balloons = document.getElementById('balloons');
                 balloons.style.display = 'flex';
+
                 anime({
                     targets: '#balloons',
                     translateY: -windowHeight - 200,
                     duration: 4000,
                     easing: 'easeInOutQuad',
                 })
+
+                animateBalloons();
+
             }
         })
     }
