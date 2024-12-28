@@ -1,4 +1,4 @@
-# 2025Animation
+# 2025animation
 
 
 ## About the Project
