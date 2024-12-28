@@ -1,5 +1,6 @@
 # New-Year-Animation
 
+
 ## About the Project
 This project features a New Year's Eve animation for 2024. Users will see the "HAPPY NEW YEAR" message along with the animation of the balloons for 2025 floating up into the sky. The animation is powered by the Anime.js library and starts automatically when the page is loaded.
 
