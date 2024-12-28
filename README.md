@@ -1,4 +1,4 @@
-# New-Year-Animation
+# 2025Animation
 
 
 ## About the Project
@@ -19,7 +19,7 @@ This project features a New Year's Eve animation for 2024. Users will see the "H
  ## File Structure
  
  ```bash
-/new-year-animation
+/2025animation
     /images
         - balloon.png
         - balloons.png
